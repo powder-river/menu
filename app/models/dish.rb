@@ -1,9 +1,9 @@
 class Dish < ActiveRecord::Base
   belongs_to :courses
 
-  def show_the_food
-  stuff = Course.find_by_id(self.course_id)
-  stuff.name
+  def show_course
+  course = Course.find_by_id(self.course_id)
+  course.name
   end
-  
+
 end
