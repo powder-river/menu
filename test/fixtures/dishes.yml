@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyString
-  price: 9.99
+  name: Kabab
+  description: arab style meats and herbs
+  price: 5.25
+  course_id: 2
 
 two:
-  name: MyString
-  description: MyString
-  price: 9.99
+  name: Lamb Stew
+  description: a lamb stew
+  price: 4.77
+  course_id: 2
