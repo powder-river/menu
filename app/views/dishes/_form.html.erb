@@ -24,8 +24,8 @@
     <%= f.text_field :price %>
   </div>
   <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.number_field :course_id %>
+    <%= f.hidden_field :course_id, :value => params[:course_id] %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
