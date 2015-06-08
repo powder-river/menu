@@ -12,5 +12,13 @@ Course.create!(name: "Legally Grey Waffles")
 
 Dish.create!(name: "Honey Waffle", description: "delicious", price: 2.50, course_id: 1)
 Dish.create!(name: "Bannana Foster Waffle ", description: "ok", price: 10.50, course_id: 1)
+Dish.create!(name: "Cookie Waffle ", description: "ok", price: 10.50, course_id: 1)
 
 Dish.create!(name: "Sweet and Sour Waffle", description: "awesome!", price: 12.50, course_id: 2)
+Dish.create!(name: "Vegimite Waffle", description: "delicious", price: 2.50, course_id: 2)
+Dish.create!(name: "Bannana Foster Waffle ", description: "ok", price: 10.50, course_id: 2)
+
+
+Dish.create!(name: "Colorado Waffle", description: "Crave More!", price: 2.50, course_id: 3)
+Dish.create!(name: "Charlie Sheen Waffle", description: "ok", price: 10.50, course_id: 3)
+Dish.create!(name: "The Congressman Waffle", description: "ok", price: 10.50, course_id: 3)
