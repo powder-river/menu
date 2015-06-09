@@ -1,38 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Danai's House of Waffles Foodtruck!</h1>
+<div class="container">
 
-<% @courses.each do |course| %>
 
-<h3><%=course.name %></h3>
-<p><%= link_to 'New Dish', new_dish_path(:course_id => course.id) %></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Course</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+  <h1 class="page-header">Danai's House of Waffles Foodtruck!</h1>
 
-    <tbody>
+  <% @courses.each do |course| %>
+      <h3><%=course.name %></h3>
+      <p class="btn btn-info danai"><%= link_to 'New Dish', new_dish_path(:course_id => course.id) %></p>
       <% course.dishes.each do |dish| %>
-        <tr>
-          <td><%= link_to dish.name, edit_dish_path(dish) %></td>
-          <td><%= dish.description %></td>
-          <td><%= dish.price %></td>
-          <!-- <td><%= dish.course_id %></td> -->
-          <!-- <td><%= link_to 'Show', dish %></td> -->
-          <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+        <h4><%= link_to dish.name, edit_dish_path(dish) %></h4>
+        <p><%= dish.description %>
+        <%= dish.price %></p>
+
+
       <% end %>
-    </tbody>
-  </table>
-
-<% end %>
-
-<br>
-
-<%= link_to 'New Dish', new_dish_path %>
+  <% end %>
+    </div>
+  </div>
+</div>

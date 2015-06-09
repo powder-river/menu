@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *= require 'bootstrap'
  */
+.btn.btn-info.danai{
+  background-color: purple;
+  border-color: black;
+  a:visited{
+    color: white;
+  }
+  a:link{
+    color: white;
+  }
+}
